@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<!--<link rel="shortcut icon" href="img/favicon.png">-->
+<title>Авторизация подтверждение номера. Ошибка</title>
+</head>
+<body>
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 header-top-col-left">
+          <a href="#" class="logo">
+            <img src="img/svg/logo.svg" alt="" class="md-hide">
+            <img src="img/svg/logo-md.svg" alt="" class="md-visible">
+          </a>
+        </div>
+        <div class="col-md-9 header-top-col-right">
+          <a href="tel:8-499-951-9180" class="phone">8-499-951-9180</a>
+          <div class="time">
+            c 7:00 до 20:00 мск, <br>
+            без выходных (звонок платный)
+          </div>
+          <a href="#" class="btn btn_blue_dark">
+            <img src="img/svg/arrow-circle-right.svg" alt="">
+            <span class="md-hide">Личный кабинет</span>
+            <span class="md-visible">Вход</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-calc">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 header-calc-col-progressbar md-hide">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in"><span>Уже заполнено</span></div>
+            <div class="header-calc-title-in"><div class="bold">10%</div></div>
+          </div>
+          <div class="progressbar">
+            <div class="progressbar-scale" style="width: 10%"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-md-6 header-calc-col-result md-hide">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in">
+              <span>Вы берете займ на сумму:</span>
+              <b>10 170 ₽</b>
+            </div>
+            <div class="header-calc-title-in">
+              <span>Сроком на:</span>
+              <b>13 дней</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 header-calc-col-progressbar md-visible">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in"><span>Уже заполнено</span></div>
+            <div class="header-calc-title-in"><div class="bold">10%</div></div>
+          </div>
+          <div class="progressbar">
+            <div class="progressbar-scale" style="width: 10%"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page-registration">
+  <form action="" class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 registration-col">
+          <div class="confirmation text-center">
+            <div class="h1">Подтвердите мобильный телефон</div>
+            <p>Код подтверждения отправлен на номер <a href="tel:+79020010203">+7 (902) 001-02-03.</a> <br>
+              Введите полученный код</p>
+            <div class="code-sms error ">
+              <div class="text-left">
+                Код из СМС
+              </div>
+              <div class="error-icon">
+                <input type="password" value="1234">
+              </div>
+              <div class="error-text">Веевден не корректный код <br>
+                Осталось попыток: 2</div>
+            </div>
+            <ul class="link-block">
+              <li><a href="#" class="">Выслать код повторно </a></li>
+            </ul>
+            <div class="btn btn_blue">Далее</div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </form>
+</main>
+
+<!-- Modal -->
+
+<div class="modal" id="modal-registration" tabindex="-1" role="dialog"
+     aria-labelledby="modal-registration"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--      <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--        <span aria-hidden="true">-->
+<!--          <img src="img/svg/close.svg" alt="">-->
+<!--        </span>-->
+<!--      </button>-->
+
+      <div class="col-md-12 registration-col">
+        <div class="h1 md-hide">ФИО и контактные данные</div>
+
+
+        <ul class="form-list">
+          <li class="item success">
+            <label for="item-input-surname" class="label">Фамилия</label>
+            <input type="text" value="Иванов" id="item-input-surname">
+          </li>
+          <li class="item ">
+            <label for="item-input-name" class="label">Имя</label>
+            <input type="text" value="Имя" id="item-input-name">
+          </li>
+          <li class="item">
+            <label for="item-input-middlename" class="label">Отчество</label>
+            <input type="text" value="Иванович" id="item-input-middlename">
+          </li>
+          <li class="item ">
+            <input type="checkbox" id="item-input-checkbox" class="checkbox">
+            <label for="item-input-checkbox">Нет отчества</label>
+
+          </li>
+          <li class="item ">
+            <label for="datepicker" class="label">Дата рождения</label>
+            <input type="text" id="datepicker" class="datepicker-ru hasDatepicker" value="1988-08-17">
+          </li>
+          <li class="item">
+            <label for="item-input-phone" class="label">Телефон</label>
+            <input type="text" id="item-input-phone" placeholder="+7 (___) ___-__-__" class="phone">
+          </li>
+          <li class="item ">
+            <label for="item-input-email" class="label">Почта</label>
+            <input type="email" id="item-input-email" placeholder="Example@gmail.com">
+          </li>
+          <li class="item">
+            <ul class="d-flex">
+              <li>
+                <button class="btn btn_blue" type="submit">Сохранить изменения</button>
+              </li>
+              <li>
+                <button class="btn btn_border_blue" type="submit">Выйти без изменений</button>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/main.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

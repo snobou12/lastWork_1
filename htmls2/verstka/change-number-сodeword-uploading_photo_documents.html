@@ -1,0 +1,198 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<!--<link rel="shortcut icon" href="img/favicon.png">-->
+<title>Смена номера. Загрузка фото документов</title>
+</head>
+<body>
+<header class="header header-change-number">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 header-top-col-left">
+          <a href="#" class="logo">
+            <img src="img/svg/logo.svg" alt="" class="md-hide">
+            <img src="img/svg/logo-md.svg" alt="" class="md-visible">
+          </a>
+        </div>
+        <div class="col-md-9 header-top-col-right">
+          <a href="tel:8-499-951-9180" class="phone">8-499-951-9180</a>
+          <div class="time">
+            c 7:00 до 20:00 мск, <br>
+            без выходных (звонок платный)
+          </div>
+          <a href="#" class="btn btn_blue_dark">
+            <img src="img/svg/arrow-circle-right.svg" alt="">
+            <span class="md-hide">Личный кабинет</span>
+            <span class="md-visible">Вход</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page-registration">
+  <form action="" class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 registration-col">
+          <div class="h1 -md-hide">Загрузите фото/сканы документов</div>
+          <ul class="form-list">
+            <li class="item">
+              <p class="info">Для изменения номера телефона необходимо пройти процесс аутентификации личности. Для этого загрузите,
+                пожалуйста, фото своего лица (селфи)
+                со 2-м разворотом паспорта (2 и 3 страницы с фотографией),
+                а также фото листа бумаги с надписью "Изменить номер" и новым
+                номером со 2 разворотом паспорта (2 и 3 страницы с фотографией)</p>
+            </li>
+            <li class="item pb-3">
+              <a class="text-decoration-underline color-blue d-flex" onclick="$('.item-hide').toggleClass('active');">
+                <span class="d-inline mr-3">Инструкция</span> <img
+                src="img/svg/arrow-down-blue.svg" alt=""></a>
+              <div class="item-hide">
+                <div>
+                  <p><b>Фото своего лица (селфи) со своим паспортом.</b></p>
+                  <p>Сделайте и прикрепите селфи с паспортом (второй разворот с фото на уровне лица). Постарайтесь не перекрыть серию и номер паспорта пальцами, очки следует снять.</p>
+                </div>
+                <div>
+                  <p> <b>Фото листа с надписью "Изменить номер".</b></p>
+                  <p>Прикрепите фото паспорта (второй разворот с фото ) рядом с листом, на котором будет написано или напечатано предложение "Изменить номер" и указан новый номер телефона.</p>
+                </div>
+                <div>
+                  <p><b>Паспорт гражданина РФ (фото- или скан-копия).</b></p>
+                  <p>Прикрепите следующие страницы Вашего паспорта:</p>
+                  <ul class="list">
+                    <li>страница со сведениями по ранее выданным паспортам</li>
+                  </ul>
+                  <p><span class="color-blue">Важно!</span> Данный скан необходим, если с момента последнего обращения в Компанию у Вас произошла замена паспорта.</p>
+                </div>
+                <div>
+                  <p><b>Требования к прикрепляемым файлам.</b></p>
+                  <p>Подойдут следующие форматы: <span class="color-blue">BMP, PNG, JPG, PDF.</span></p>
+                  <p><span class="color-blue">Важно!</span> Все фото должны быть хорошего качества, читаемы.</p>
+                  <p>После загрузки всех файлов нажмите кнопку <span class="color-blue">«Далее»</span>.</p>
+                </div>
+              </div>
+            </li>
+            <li class="item pt-3">
+              <div class="inputfile-box">
+                <input type="file" name="file" id="input_file" class="inputfile"
+                       data-multiple-caption="{count} files selected" multiple="">
+                <label for="input_file"><strong><img src="img/svg/download.svg" alt=""></strong><span>Паспорт гражданина РФ (главная)</span></label>
+              </div>
+            </li>
+            <li class="item">
+              <ul class="result-img">
+                <li>
+                  <div class="result-img-item">
+                    <img src="img/svg/icon-img.svg" alt="">
+                    <span>Обложка.jpg</span>
+                  </div>
+                  <a href="#"><img src="img/svg/delete.svg" alt=""></a>
+                </li>
+                <li>
+                  <div class="result-img-item">
+                    <img src="img/svg/icon-img.svg" alt="">
+                    <span>Регистрация.jpg</span>
+                  </div>
+                  <a href="#"><img src="img/svg/delete.svg" alt=""></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <div class="inputfile-box">
+                <input type="file" name="file" id="input_file2" class="inputfile"
+                       data-multiple-caption="{count} files selected" multiple="">
+                <label for="input_file2"><strong><img src="img/svg/download.svg" alt=""></strong><span>Фото личной банковской карты</span></label>
+              </div>
+            </li>
+            <li class="item">
+              <div class="inputfile-box">
+                <input type="file" name="file" id="input_file3" class="inputfile"
+                       data-multiple-caption="{count} files selected" multiple="">
+                <label for="input_file3"><strong><img src="img/svg/download.svg" alt=""></strong><span>Паспорт гражданина РФ (главная)</span></label>
+              </div>
+            </li>
+            <li class="item">
+              <div class="error-text">Загруженные фото/сканы не соответствуют требованиям</div>
+            </li>
+            <li class="item">
+              <button class="btn btn_blue" type="submit">Далее</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
+
+
+<!-- Modal -->
+<!--
+<div class="modal" id="modal_cancel-registration" tabindex="-1" role="dialog"
+     aria-labelledby="modal_cancel-registration"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <img src="img/svg/close.svg" alt="">
+        </span>
+      </button>
+      <div class="h2">Отмена регистрации</div>
+      <div class="item-textarea">
+        <label for="coments" class="inp">
+          <textarea name="coments"  id="coments" placeholder="&nbsp;" required></textarea>
+          <span class="label">Комментарий DME</span>
+        </label>
+      </div>
+      <div class="button-row">
+        <button type="reset" class="btn btn_grey_light">Отмена</button>
+        <button type="submit" class="btn btn_grean" onclick="$('.information').hide()" data-dismiss="modal" aria-label="Close">Подтвердить</button>
+      </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>-->
+
+
+
+
+
+<script src="js/main.min.js"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+  let pass = document.querySelector('.password-icon')
+  pass.addEventListener('click', function () {
+   let parent = this.closest('.item'),
+     input = parent.querySelector('.password')
+   if (input.type === 'password') {
+    this.classList.add('active')
+    input.type = 'text'
+   } else {
+    this.classList.remove('active')
+    input.type = 'password'
+   }
+
+  })
+  // var x = document.getElementById("myInput");
+  // if (x.type === "password") {
+  //  x.type = "text";
+  // } else {
+  //  x.type = "password";
+  // }
+ })
+</script>
+</body>
+</html>

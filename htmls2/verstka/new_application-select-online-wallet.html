@@ -1,0 +1,316 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<!--<link rel="shortcut icon" href="img/favicon.png">-->
+<title>Новая заявка. Выбор способа зачисления. Карта</title>
+</head>
+<body>
+<header class="header header-change-number">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 header-top-col-left">
+          <a href="#" class="logo">
+            <img src="img/svg/logo.svg" alt="" class="md-hide">
+            <img src="img/svg/logo-md.svg" alt="" class="md-visible">
+          </a>
+        </div>
+        <div class="col-md-9 header-top-col-right">
+          <a href="tel:8-499-951-9180" class="phone">8-499-951-9180</a>
+          <div class="time">
+            c 7:00 до 20:00 мск, <br>
+            без выходных (звонок платный)
+          </div>
+          <a href="#" class="btn btn_blue_dark">
+            <img src="img/svg/arrow-circle-right.svg" alt="">
+            <span class="md-hide">Личный кабинет</span>
+            <span class="md-visible">Вход</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page-registration">
+  <form action="" class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 registration-col">
+          <div class="h1">Выберите способ получения денег</div>
+          <ul class="nav nav-tabs nav-list-select">
+            <li>
+              <a data-toggle="tab" href="#map">
+                <img src="img/svg/visa.svg" alt="">
+              </a>
+            </li>
+            <li><a data-toggle="tab" href="#house"><img src="img/svg/house.svg" alt=""></a></li>
+            <li><a class="active" data-toggle="tab" href="#yandex"><img src="img/svg/yandex.svg" alt=""></a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="map" class="tab-pane fade">
+              <ul class="form-list">
+                <li class="item">
+                  <div class="h3">На карту банка</div>
+                </li>
+                <li class="item">
+                  <label for="item-input-phone" class="label">Номер карты</label>
+                  <input type="text" id="item-input-phone" placeholder="+7 (___) ___-__-__" class="phone">
+                </li>
+                <li class=" ">
+                  <ul class="pessword_data">
+                    <li class="item ">
+                      <label for="year" class="label">Год</label>
+                      <input type="text" value="MM/YY" id="year">
+                    </li>
+                    <li class="item ">
+                      <label for="CVC" class="label">CVC</label>
+                      <input type="text" value="CVC" id="CVC">
+                    </li>
+                  </ul>
+                </li>
+                <li class="item ">
+                  <div class="d-flex">
+                    <label for="tyrbobonus" class="label">Турбобонус</label>
+                    <input type="text" value="0000" id="tyrbobonus">
+                    <div class="position-absolute">
+                      <div class="svg-block" data-tooltip="Укажите промокод и получите скидку">
+                        <img src="img/svg/questions.svg" alt="">
+                      </div>
+                    </div>
+
+
+                  </div>
+                </li>
+                <li class="item item-checkbox">
+                  <input type="checkbox" id="item-input-checkbox" class="checkbox" checked="">
+                  <label for="item-input-checkbox">Я присоединяюсь к Соглашению об использовании аналога собственноручной
+                    подписи и подтверждаю, что ознакомился и согласен с документами</label>
+                  <a class="check-grey" href="javascript:void(0);" onclick="$(this).toggleClass('active').parent().next().toggleClass('hide')"><img src="img/svg/check-grey.svg" alt=""></a>
+                </li>
+
+                <li class="item-checkbox hide">
+                  <ul class="item-checkbox-list">
+                    <li class="item ">
+                      <p>Наименование продукта}
+                        Услуга предоставляется {наименование компании}
+                        Полис страхования для ознакомления по ссылке
+                        Стоимость услуги страхования {параметр} от {параметр}
+                        Стоимость страхового покрытия: {параметр} руб.
+                        Срок страхования: {параметр} дней
+                        Страховые случаи: смерть в результате несчастного случая, установление инвалидности I и II группы в результате несчастного случая. временная утрата
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <button class="btn btn_blue" type="submit">Далее</button>
+                </li>
+              </ul>
+            </div>
+            <div id="house" class="tab-pane fade">
+              <ul class="form-list">
+                <li class="item">
+                  <div class="h3">На расчетный счет</div>
+                </li>
+                <li class="item">
+                  <label for="number-account" class="label">Номер счёта</label>
+                  <input type="text" id="number-account" value="0000 0000 0000 0000" >
+                </li>
+                <li class="item">
+                  <label for="name-banc" class="label">Наименование банка</label>
+                  <input type="text" id="name-banc" value="ВТБ" >
+                </li>
+                <li class="item">
+                  <label for="city" class="label">Город</label>
+                  <input type="text" id="city" value="0000">
+                </li>
+                <li class="item">
+                  <label for="bic" class="label">БИК</label>
+                  <input type="text" id="bic" value="0000">
+                </li>
+                <li class="item">
+                  <label for="correspondent-account" class="label">Корреспондентский счёт</label>
+                  <input type="text" id="correspondent-account" value="0000">
+                </li>
+                <li class="item ">
+                  <div class="d-flex">
+                    <label for="tyrbobonus2" class="label">Турбобонус</label>
+                    <input type="text" value="0000" id="tyrbobonus2">
+                    <div class="position-absolute">
+                      <div class="svg-block" data-tooltip="Укажите промокод и получите скидку">
+                        <img src="img/svg/questions.svg" alt="">
+                      </div>
+                    </div>
+
+
+                  </div>
+                </li>
+                <li class="item item-checkbox">
+                  <input type="checkbox" id="item-input-checkbox-2" class="checkbox" checked="">
+                  <label for="item-input-checkbox-2">Я присоединяюсь к Соглашению об использовании аналога собственноручной
+                    подписи и подтверждаю, что ознакомился и согласен с документами</label>
+                  <a class="check-grey active" href="javascript:void(0);" onclick="$(this).toggleClass('active').parent().next().toggleClass('hide')"><img src="img/svg/check-grey.svg" alt=""></a>
+                </li>
+
+                <li class="item-checkbox ">
+                  <ul class="item-checkbox-list">
+                    <li class="item ">
+                      <p>Наименование продукта}
+                        Услуга предоставляется {наименование компании}
+                        Полис страхования для ознакомления по ссылке
+                        Стоимость услуги страхования {параметр} от {параметр}
+                        Стоимость страхового покрытия: {параметр} руб.
+                        Срок страхования: {параметр} дней
+                        Страховые случаи: смерть в результате несчастного случая, установление инвалидности I и II группы в результате несчастного случая. временная утрата
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <button class="btn btn_blue" type="submit">Далее</button>
+                </li>
+              </ul>
+            </div>
+            <div id="yandex" class="tab-pane fade in active">
+              <ul class="form-list">
+                <li class="item">
+                  <div class="h3">На электронный кошелек</div>
+                </li>
+                <li class="item">
+                  <label for="number-wallet" class="label">Номера кошелька</label>
+                  <input type="text" id="number-wallet" value="0000 0000 0000 0000" >
+                </li>
+                <li class="item ">
+                  <div class="d-flex">
+                    <label for="tyrbobonus-3" class="label">Турбобонус</label>
+                    <input type="text" value="0000" id="tyrbobonus-3">
+                    <div class="position-absolute">
+                      <div class="svg-block" data-tooltip="Укажите промокод и получите скидку">
+                        <img src="img/svg/questions.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item item-checkbox">
+                  <input type="checkbox" id="item-input-checkbox-3" class="checkbox" checked="">
+                  <label for="item-input-checkbox-3">Я присоединяюсь к Соглашению об использовании аналога собственноручной
+                    подписи и подтверждаю, что ознакомился и согласен с документами</label>
+                  <a class="check-grey" href="javascript:void(0);" onclick="$(this).toggleClass('active').parent().next().toggleClass('hide')"><img src="img/svg/check-grey.svg" alt=""></a>
+                </li>
+
+                <li class="item-checkbox hide">
+                  <ul class="item-checkbox-list">
+                    <li class="item ">
+                      <p>Наименование продукта}
+                        Услуга предоставляется {наименование компании}
+                        Полис страхования для ознакомления по ссылке
+                        Стоимость услуги страхования {параметр} от {параметр}
+                        Стоимость страхового покрытия: {параметр} руб.
+                        Срок страхования: {параметр} дней
+                        Страховые случаи: смерть в результате несчастного случая, установление инвалидности I и II группы в результате несчастного случая. временная утрата
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <button class="btn btn_blue" type="submit">Далее</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </form>
+</main>
+
+<!-- Modal -->
+
+<div class="modal" id="modal-registration" tabindex="-1" role="dialog"
+     aria-labelledby="modal-registration"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--      <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--        <span aria-hidden="true">-->
+<!--          <img src="img/svg/close.svg" alt="">-->
+<!--        </span>-->
+<!--      </button>-->
+
+      <div class="col-md-12 registration-col">
+        <div class="h1 md-hide">ФИО и контактные данные</div>
+
+
+        <ul class="form-list">
+          <li class="item success">
+            <label for="item-input-surname" class="label">Фамилия</label>
+            <input type="text" value="Иванов" id="item-input-surname">
+          </li>
+          <li class="item ">
+            <label for="item-input-name" class="label">Имя</label>
+            <input type="text" value="Имя" id="item-input-name">
+          </li>
+          <li class="item">
+            <label for="item-input-middlename" class="label">Отчество</label>
+            <input type="text" value="Иванович" id="item-input-middlename">
+          </li>
+          <li class="item ">
+            <input type="checkbox" id="item-input-checkbox" class="checkbox">
+            <label for="item-input-checkbox">Нет отчества</label>
+
+          </li>
+          <li class="item ">
+            <label for="datepicker" class="label">Дата рождения</label>
+            <input type="text" id="datepicker" class="datepicker-ru hasDatepicker" value="1988-08-17">
+          </li>
+          <li class="item">
+            <label for="item-input-phone" class="label">Телефон</label>
+            <input type="text" id="item-input-phone" placeholder="+7 (___) ___-__-__" class="phone">
+          </li>
+          <li class="item ">
+            <label for="item-input-email" class="label">Почта</label>
+            <input type="email" id="item-input-email" placeholder="Example@gmail.com">
+          </li>
+          <li class="item">
+            <ul class="d-flex">
+              <li>
+                <button class="btn btn_blue" type="submit">Сохранить изменения</button>
+              </li>
+              <li>
+                <button class="btn btn_border_blue" type="submit">Выйти без изменений</button>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/main.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

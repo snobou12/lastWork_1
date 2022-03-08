@@ -1,0 +1,5 @@
+{
+  "apiUrl": "http://localhost:3000/api/",
+  "useProxy": false,
+  "proxyUrl": "https://tz.small.mmk.local"
+}

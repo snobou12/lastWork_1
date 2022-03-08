@@ -1,0 +1,364 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<!--<link rel="shortcut icon" href="img/favicon.png">-->
+<title>Новая заявка. таймер </title>
+</head>
+<body>
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 header-top-col-left">
+          <a href="#" class="logo">
+            <img src="img/svg/logo.svg" alt="" class="md-hide">
+            <img src="img/svg/logo-md.svg" alt="" class="md-visible">
+          </a>
+        </div>
+        <div class="col-md-9 header-top-col-right">
+          <a href="tel:8-499-951-9180" class="phone">8-499-951-9180</a>
+          <div class="time">
+            c 7:00 до 20:00 мск, <br>
+            без выходных (звонок платный)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-calc">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 header-calc-col-progressbar md-hide">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in"><span>Уже заполнено</span></div>
+            <div class="header-calc-title-in"><div class="bold">100%</div></div>
+          </div>
+          <div class="progressbar">
+            <div class="progressbar-scale" style="width: 100%"></div>
+            <div class="circle" style="width: 100%"></div>
+          </div>
+        </div>
+        <div class="col-md-6 header-calc-col-result mw-480">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in">
+              <span>Вы берете займ на сумму:</span>
+              <b>10 170 ₽</b>
+            </div>
+            <div class="header-calc-title-in">
+              <span>Сроком на:</span>
+              <b>13 дней</b>
+            </div>
+            <ul class="calc-btn">
+              <li class="pluse">+</li>
+              <li class="minuse">-</li>
+              <li class="multiply">*</li>
+              <li class="exactly">=</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-lg-12 md-visible  md-hide">
+          <ul class="form-list">
+            <li class="item">
+              <ul class="form-list-in">
+                <li>
+                  <div class="label">Сумма займа</div>
+                  <div class="rub">10 000 ₽</div>
+                </li>
+                <li>
+                  <div class="label">Сумма к возврату:</div>
+                  <div class="rub">10 170 ₽</div>
+                </li>
+              </ul>
+            </li>
+            <li class="item progressbar">
+              <div class="progressbar-scale" style="width: 60%"></div>
+              <div class="circle" style="left: 60%"></div>
+            </li>
+            <li class="item">
+              <ul class="item_list">
+                <li>1 000</li>
+                <li>5 000</li>
+                <li>10 000</li>
+                <li>15 000</li>
+              </ul>
+            </li>
+            <li class="item item-data">
+              <ul class="form-list-in">
+                <li>
+                  <div class="label">Срок займа</div>
+                  <div class="rub">
+                    <img src="img/svg/data-bg-white.svg" alt="">
+                    <span> 10 нед.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="label">Сумма переплаты:</div>
+                  <div class="rub">1 170 ₽</div>
+                </li>
+              </ul>
+            </li>
+            <li class="item progressbar">
+              <div class="progressbar-scale" style="width: 60%"></div>
+              <div class="circle" style="left: 60%"></div>
+            </li>
+            <li class="item">
+              <ul class="item_list">
+                <li>7 дней</li>
+                <li>16 нед.</li>
+                <li>24 нед.</li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-12 header-calc-col-progressbar md-visible ">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in"><span>Уже заполнено</span></div>
+            <div class="header-calc-title-in"><div class="bold">100%</div></div>
+          </div>
+          <div class="progressbar">
+            <div class="progressbar-scale" style="width: 100%"></div>
+            <div class="circle" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page-registration">
+  <form action="" class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 registration-col">
+          <div class="confirmation text-center">
+            <div class="h1">Ваша заявка <br>на рассмотрении</div>
+          </div>
+
+
+          <div class="timer">
+            <div class="timer_section">
+              <div class="timer_section-count minutes_1">0</div>
+              <div class="timer_section-count minutes_2">0</div>
+              <div class="timer_section_desc">минуты</div>
+            </div>
+            <div class="timer_delimetr">:</div>
+            <div class="timer_section">
+              <div class="timer_section-count seconds_1">0</div>
+              <div class="timer_section-count seconds_2">0</div>
+              <div class="timer_section_desc">секунды</div>
+            </div>
+          </div>
+
+          <div class="confirmation text-center pt-3">Спасибо, мы получили вашу анкету.
+            <br>Рассмотрение заявки займет
+            не более 5 минут</div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
+<!-- Modal -->
+<div class="modal_callback" id="modal_callback">
+  <div class="modal_callback-header">
+    <div class="icon">
+      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.6322 11L11.8593 12.8972C11.1404 13.6667 9.87535 13.6833 9.14085 12.8972L7.36784 11L1 17.8133C1.23703 17.9302 1.49838 18 1.77622 18H19.2239C19.5018 18 19.7631 17.9303 20 17.8134L13.6322 11Z" fill="white"/>
+        <path d="M19.2239 3H1.77614C1.4983 3 1.23695 3.06262 1 3.16756L7.80452 9.70395C7.80498 9.70439 7.80551 9.70447 7.80597 9.7049C7.80642 9.70534 7.80651 9.70593 7.80651 9.70593L10.019 11.8312C10.254 12.0563 10.7461 12.0563 10.9811 11.8312L13.1932 9.70629C13.1932 9.70629 13.1937 9.70534 13.1942 9.7049C13.1942 9.7049 13.1952 9.70439 13.1956 9.70395L20 3.16752C19.763 3.06254 19.5018 3 19.2239 3Z" fill="white"/>
+        <path d="M0.210614 4C0.0800915 4.25187 0 4.53146 0 4.83096V16.169C0 16.4685 0.0800035 16.7481 0.21057 17L7 10.5002L0.210614 4Z" fill="white"/>
+        <path d="M20.7894 4L14 10.5002L20.7894 17C20.9199 16.7481 21 16.4685 21 16.169V4.83103C21 4.53146 20.9199 4.25187 20.7894 4Z" fill="white"/>
+      </svg>
+    </div>
+    <span class="title">Оставить заявку</span>
+    <button class="close" id="close" data-close="#modal_callback">
+      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1" width="23" height="2" transform="rotate(45 2 1)" fill="white"/>
+        <rect x="1" y="17" width="23" height="2" transform="rotate(-45 1 17)" fill="white"/>
+      </svg>
+    </button>
+  </div>
+  <div class="modal_callback-content">
+    <div class="prompt">
+      Оставьте свои контактные данные,
+      и мы свяжемся с вами в ближайшее время
+    </div>
+    <form action="">
+      <input type="text" placeholder="Имя">
+      <input type="email" placeholder="E-mail">
+      <input type="text" placeholder="Телефон" class="phone">
+      <textarea name="" placeholder="Ваше сообщение"></textarea>
+      <ul class="btn-list">
+        <li>
+          <a href="#" class="btn btn_border_blue">Заказать звонок</a>
+        </li>
+        <li>
+          <a href="#" class="btn btn_blue">Отправить</a>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <div class="modal_callback-footer">
+    <span>Работает на платформе <a href="#">LiveTex</a></span>
+  </div>
+</div>
+
+<button class="button_callback" id="button_callback" data-target="#modal_callback">
+  <span class="button_callback-icon">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.2971 12L12.4309 13.8972C11.6741 14.6667 10.3425 14.6833 9.56932 13.8972L7.70299 12L1 18.8133C1.24951 18.9302 1.52461 19 1.81707 19H20.1831C20.4756 19 20.7506 18.9303 21 18.8134L14.2971 12Z" fill="#007BC9"/>
+<path d="M20.1831 3H1.81699C1.52452 3 1.24942 3.06958 1 3.18618L8.16265 10.4488C8.16313 10.4493 8.1637 10.4494 8.16418 10.4499C8.16466 10.4504 8.16474 10.451 8.16474 10.451L10.4937 12.8125C10.7411 13.0625 11.2591 13.0625 11.5065 12.8125L13.835 10.4514C13.835 10.4514 13.8355 10.4504 13.836 10.4499C13.836 10.4499 13.837 10.4493 13.8375 10.4488L21 3.18614C20.7506 3.06949 20.4756 3 20.1831 3Z" fill="#007BC9"/>
+<path d="M0.210614 4C0.0800915 4.25187 0 4.53146 0 4.83096V16.169C0 16.4685 0.0800035 16.7481 0.21057 17L7 10.5002L0.210614 4Z" fill="#007BC9"/>
+<path d="M21.7894 4L15 10.5002L21.7894 17C21.9199 16.7481 22 16.4685 22 16.169V4.83103C22 4.53146 21.9199 4.25187 21.7894 4Z" fill="#007BC9"/>
+</svg>
+  </span>
+  <span class="button_callback-text">Оставить заявку</span>
+</button>
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+  const button_callback = document.querySelector('#button_callback'),
+        modal_id = button_callback.getAttribute('data-target')
+  document.addEventListener('click', function (e) {
+   const event_target = e.target,
+         close = document.querySelector('#close'),
+         modal = document.querySelector(modal_id)
+
+   if (event_target == button_callback ){
+    modal.classList.toggle('active')
+   }else if (event_target == close){
+    modal.classList.remove('active')
+   }
+  })
+
+ })
+</script>
+
+<div class="modal" id="modal-registration" tabindex="-1" role="dialog"
+     aria-labelledby="modal-registration"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--      <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--        <span aria-hidden="true">-->
+<!--          <img src="img/svg/close.svg" alt="">-->
+<!--        </span>-->
+<!--      </button>-->
+
+      <div class="col-md-12 registration-col">
+        <div class="h1 md-hide">ФИО и контактные данные</div>
+
+
+        <ul class="form-list">
+          <li class="item success">
+            <label for="item-input-surname" class="label">Фамилия</label>
+            <input type="text" value="Иванов" id="item-input-surname">
+          </li>
+          <li class="item ">
+            <label for="item-input-name" class="label">Имя</label>
+            <input type="text" value="Имя" id="item-input-name">
+          </li>
+          <li class="item">
+            <label for="item-input-middlename" class="label">Отчество</label>
+            <input type="text" value="Иванович" id="item-input-middlename">
+          </li>
+          <li class="item ">
+            <input type="checkbox" id="item-input-checkbox" class="checkbox">
+            <label for="item-input-checkbox">Нет отчества</label>
+
+          </li>
+          <li class="item ">
+            <label for="datepicker" class="label">Дата рождения</label>
+            <input type="text" id="datepicker" class="datepicker-ru hasDatepicker" value="1988-08-17">
+          </li>
+          <li class="item">
+            <label for="item-input-phone" class="label">Телефон</label>
+            <input type="text" id="item-input-phone" placeholder="+7 (___) ___-__-__" class="phone">
+          </li>
+          <li class="item ">
+            <label for="item-input-email" class="label">Почта</label>
+            <input type="email" id="item-input-email" placeholder="Example@gmail.com">
+          </li>
+          <li class="item">
+            <ul class="d-flex">
+              <li>
+                <button class="btn btn_blue" type="submit">Сохранить изменения</button>
+              </li>
+              <li>
+                <button class="btn btn_border_blue" type="submit">Выйти без изменений</button>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/main.min.js"></script>
+<script>
+ function timer(f_time) {
+  function timer_go() {
+   var n_time = Date.now();
+   var diff = f_time - n_time;
+   if(diff <= 0) return false;
+   var left = diff % 1000;
+
+   //секунды
+   diff = parseInt(diff / 1000);
+   var s = diff % 60;
+   if(s < 10) {
+    $(".seconds_1").html('<span>0</span>');
+    if (s == 0){
+     $(".seconds_2").html('<span>' + 0 + '</span>');
+    }else{
+     $(".seconds_2").html(s);
+    }
+   }else {
+    $(".seconds_1").html(parseInt(s / 10));
+    $(".seconds_2").html(s % 10);
+   }
+   //минуты
+   diff = parseInt(diff / 60);
+   var m = diff % 60;
+   if(m < 10) {
+    $(".minutes_1").html('<span>0</span>');
+    if (m == 0){
+     $(".minutes_2").html('<span>' + 0 + '</span>');
+    }else{
+     $(".minutes_2").html(m);
+    }
+   }else {
+    $(".minutes_1").html(parseInt(m / 10));
+    $(".minutes_2").html(m % 10);
+   }
+   setTimeout(timer_go, left);
+  }
+  setTimeout(timer_go, 0);
+ }
+
+ $(document).ready(function() {
+  var time = new Date(Date.parse(new Date())  + 5 * 60 * 1000)
+  timer(time);
+ });
+</script>
+</body>
+</html>

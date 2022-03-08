@@ -1,0 +1,235 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<!--<link rel="shortcut icon" href="img/favicon.png">-->
+<title>Авторизация, счетчик блокировки</title>
+</head>
+<body>
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 header-top-col-left">
+          <a href="#" class="logo">
+            <img src="img/svg/logo.svg" alt="" class="md-hide">
+            <img src="img/svg/logo-md.svg" alt="" class="md-visible">
+          </a>
+        </div>
+        <div class="col-md-9 header-top-col-right">
+          <a href="tel:8-499-951-9180" class="phone">8-499-951-9180</a>
+          <div class="time">
+            c 7:00 до 20:00 мск, <br>
+            без выходных (звонок платный)
+          </div>
+          <a href="#" class="btn btn_blue_dark">
+            <img src="img/svg/arrow-circle-right.svg" alt="">
+            <span class="md-hide">Личный кабинет</span>
+            <span class="md-visible">Вход</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-calc">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 header-calc-col-progressbar md-hide">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in"><span>Уже заполнено</span></div>
+            <div class="header-calc-title-in"><div class="bold">10%</div></div>
+          </div>
+          <div class="progressbar">
+            <div class="progressbar-scale" style="width: 10%"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-md-6 header-calc-col-result md-hide">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in">
+              <span>Вы берете займ на сумму:</span>
+              <b>10 170 ₽</b>
+            </div>
+            <div class="header-calc-title-in">
+              <span>Сроком на:</span>
+              <b>13 дней</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 header-calc-col-progressbar md-visible">
+          <div class="header-calc-title">
+            <div class="header-calc-title-in"><span>Уже заполнено</span></div>
+            <div class="header-calc-title-in"><div class="bold">10%</div></div>
+          </div>
+          <div class="progressbar">
+            <div class="progressbar-scale" style="width: 10%"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page-registration">
+  <form action="" class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 registration-col">
+          <div class="confirmation text-center">
+            <div class="h1">Блокировка ввода
+              <br>СМС-кода</div>
+            <p>Вы неправильно ввели код авторизации 4 раза. <br>
+              Повторная попытка ввода кода будет доступна через:</p>
+          </div>
+
+
+          <div class="timer">
+            <div class="timer_section">
+              <div class="timer_section-count minutes_1">0</div>
+              <div class="timer_section-count minutes_2">0</div>
+              <div class="timer_section_desc">минуты</div>
+            </div>
+            <div class="timer_delimetr">:</div>
+            <div class="timer_section">
+              <div class="timer_section-count seconds_1">0</div>
+              <div class="timer_section-count seconds_2">0</div>
+              <div class="timer_section_desc">секунды</div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
+
+<!-- Modal -->
+
+<div class="modal" id="modal-registration" tabindex="-1" role="dialog"
+     aria-labelledby="modal-registration"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--      <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--        <span aria-hidden="true">-->
+<!--          <img src="img/svg/close.svg" alt="">-->
+<!--        </span>-->
+<!--      </button>-->
+
+      <div class="col-md-12 registration-col">
+        <div class="h1 md-hide">ФИО и контактные данные</div>
+
+
+        <ul class="form-list">
+          <li class="item success">
+            <label for="item-input-surname" class="label">Фамилия</label>
+            <input type="text" value="Иванов" id="item-input-surname">
+          </li>
+          <li class="item ">
+            <label for="item-input-name" class="label">Имя</label>
+            <input type="text" value="Имя" id="item-input-name">
+          </li>
+          <li class="item">
+            <label for="item-input-middlename" class="label">Отчество</label>
+            <input type="text" value="Иванович" id="item-input-middlename">
+          </li>
+          <li class="item ">
+            <input type="checkbox" id="item-input-checkbox" class="checkbox">
+            <label for="item-input-checkbox">Нет отчества</label>
+
+          </li>
+          <li class="item ">
+            <label for="datepicker" class="label">Дата рождения</label>
+            <input type="text" id="datepicker" class="datepicker-ru hasDatepicker" value="1988-08-17">
+          </li>
+          <li class="item">
+            <label for="item-input-phone" class="label">Телефон</label>
+            <input type="text" id="item-input-phone" placeholder="+7 (___) ___-__-__" class="phone">
+          </li>
+          <li class="item ">
+            <label for="item-input-email" class="label">Почта</label>
+            <input type="email" id="item-input-email" placeholder="Example@gmail.com">
+          </li>
+          <li class="item">
+            <ul class="d-flex">
+              <li>
+                <button class="btn btn_blue" type="submit">Сохранить изменения</button>
+              </li>
+              <li>
+                <button class="btn btn_border_blue" type="submit">Выйти без изменений</button>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/main.min.js"></script>
+<script>
+ function timer(f_time) {
+  function timer_go() {
+   var n_time = Date.now();
+   var diff = f_time - n_time;
+   if(diff <= 0) return false;
+   var left = diff % 1000;
+
+   //секунды
+   diff = parseInt(diff / 1000);
+   var s = diff % 60;
+   if(s < 10) {
+    $(".seconds_1").html('<span>0</span>');
+    if (s == 0){
+     $(".seconds_2").html('<span>' + 0 + '</span>');
+    }else{
+     $(".seconds_2").html(s);
+    }
+   }else {
+    $(".seconds_1").html(parseInt(s / 10));
+    $(".seconds_2").html(s % 10);
+   }
+   //минуты
+   diff = parseInt(diff / 60);
+   var m = diff % 60;
+   if(m < 10) {
+    $(".minutes_1").html('<span>0</span>');
+    if (m == 0){
+     $(".minutes_2").html('<span>' + 0 + '</span>');
+    }else{
+     $(".minutes_2").html(m);
+    }
+   }else {
+    $(".minutes_1").html(parseInt(m / 10));
+    $(".minutes_2").html(m % 10);
+   }
+   setTimeout(timer_go, left);
+  }
+  setTimeout(timer_go, 0);
+ }
+
+ $(document).ready(function() {
+  var time = new Date(Date.parse(new Date())  + 5 * 60 * 1000)
+  timer(time);
+ });
+</script>
+</body>
+</html>
